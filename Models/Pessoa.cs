@@ -17,5 +17,8 @@ public class Pessoa
 
     public string Nome { get; set; }
     public string Sobrenome { get; set; }
-    public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+    public string NomeCompleto =>
+    string.Join(" ", new[] { Nome, Sobrenome }.Where(s => !string.IsNullOrWhiteSpace(s))).ToUpper();
+    /*Com isto, posso instânciar nome, nome + sobrenome, e caso seja apenas o nome,
+    não haverá um espaço vazio ao final*/
 }
