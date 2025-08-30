@@ -1,3 +1,6 @@
+## UPDATE: Projeto finalizado.
+Projeto refatorado, implementado menu com seleção de opções, try catch para captar uma possível excessão, o usuário pode inserir nome e sobrenome ou apenas o nome.
+
 # DIO - Trilha .NET - Explorando a linguagem C#
 www.dio.me
 
